@@ -18,8 +18,8 @@ public class WebClientConfig {
         HttpClient httpClient = HttpClient.create()
                 .proxy(proxy -> proxy
                     .type(ProxyProvider.Proxy.HTTP)
-                    .host("10.232.84.254")
-                    .port(9191));
+                    .host("ip address")
+                    .port(port));
 
         return WebClient.builder()
                 .clientConnector(new ReactorClientHttpConnector(httpClient))
